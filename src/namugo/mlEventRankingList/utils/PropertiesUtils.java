@@ -20,6 +20,7 @@ public class PropertiesUtils
 	public static String Cookie;
 	public static String X_Requested_With;
 	public static String EventCode;
+	public static String Color;
 	public static String R;
 	public static String G;
 	public static String B;
@@ -41,6 +42,7 @@ public class PropertiesUtils
 			Cookie = PROPERTIES.getProperty("Cookie");
 			X_Requested_With = PROPERTIES.getProperty("X-Requested-With");
 			EventCode = PROPERTIES.getProperty("EventCode");
+			Color = PROPERTIES.getProperty("Color");
 			R = PROPERTIES.getProperty("R");
 			G = PROPERTIES.getProperty("G");
 			B = PROPERTIES.getProperty("B");
@@ -68,6 +70,7 @@ public class PropertiesUtils
 			Cookie = PROPERTIES.getProperty("Cookie");
 			X_Requested_With = PROPERTIES.getProperty("X-Requested-With");
 			EventCode = PROPERTIES.getProperty("EventCode");
+			Color = PROPERTIES.getProperty("Color");
 			R = PROPERTIES.getProperty("R");
 			G = PROPERTIES.getProperty("G");
 			B = PROPERTIES.getProperty("B");
@@ -76,5 +79,10 @@ public class PropertiesUtils
 		{
 			ExceptionUtils.Log(e);
 		}
+	}
+	
+	public static void main(String[] args)
+	{
+		System.out.println(PropertiesUtils.Color);
 	}
 }

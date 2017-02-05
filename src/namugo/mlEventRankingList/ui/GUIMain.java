@@ -5,6 +5,7 @@ import javax.swing.table.DefaultTableModel;
 
 import namugo.mlEventRankingList.entity.Ranking;
 import namugo.mlEventRankingList.service.GetRanking;
+import namugo.mlEventRankingList.utils.ColorUtils;
 import namugo.mlEventRankingList.utils.ExceptionUtils;
 import namugo.mlEventRankingList.utils.PropertiesUtils;
 
@@ -67,8 +68,7 @@ public class GUIMain extends JFrame
 		table.getColumn("Rank").setMaxWidth(140);
 		table.getColumn("Producer").setMaxWidth(300);
 		table.getColumn("Point").setMaxWidth(200);
-		table.setBackground(new Color(Integer.parseInt(PropertiesUtils.R),
-				Integer.parseInt(PropertiesUtils.G), Integer.parseInt(PropertiesUtils.B)));
+		table.setBackground(new Color(ColorUtils.R, ColorUtils.G, ColorUtils.B));
 		this.setFont(font);
 		this.setIconImage(new ImageIcon("images/logo.jpg").getImage());
 		this.setTitle("アイドルマスターミリオンライブ　イベントランキングボーダー");
