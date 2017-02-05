@@ -70,7 +70,7 @@ public class GUIMain extends JFrame
 		table.setBackground(new Color(Integer.parseInt(PropertiesUtils.R),
 				Integer.parseInt(PropertiesUtils.G), Integer.parseInt(PropertiesUtils.B)));
 		this.setFont(font);
-		this.setIconImage(new ImageIcon("images/logo.png").getImage());
+		this.setIconImage(new ImageIcon("images/logo.jpg").getImage());
 		this.setTitle("アイドルマスターミリオンライブ　イベントランキングボーダー");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setSize(640, 600);
