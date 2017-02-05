@@ -20,7 +20,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-public class TaskUtils implements Callable
+public class TaskUtils implements Callable<Object>
 {
 	private static CloseableHttpClient client;
 	private static HttpGet httpGet = new HttpGet();
@@ -52,7 +52,7 @@ public class TaskUtils implements Callable
 			Document document = Jsoup.parse(rankingListStr);
 			document.select("img").remove();
 			Elements elements = document.select(".user-list-st");
-			Iterator iterator = elements.iterator();
+			Iterator<?> iterator = elements.iterator();
 			if (pageNo == 1 || pageNo == 2)
 			{
 				while (iterator.hasNext())
