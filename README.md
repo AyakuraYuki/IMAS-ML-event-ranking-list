@@ -4,10 +4,13 @@
 ## 开发工具及项目环境<br>
 1.先期于Intellij Idea开发，后来转移到Eclipse<br>
 2.项目使用Maven创建（好像没什么好说的吧就是懒得上传lib）<br>
+3.JavaSE 1.8<br>
+4.Maven compiler plugin 3.6.1<br>
 <br>
 ## 使用技术<br>
-1.Httpclient ——Ver.4.5.2<br>
-2.Jsoup ——Ver.1.10.2<br>
+1.Httpclient ——Ver4.5.2<br>
+2.Jsoup ——Ver1.10.2<br>
+3.log4j ——Ver1.2.17<br>
 <br>
 ## 使用说明<br>
 配置文件里可以设置当前活动的活动编号，这个编号可以从URL中提取，例如当期「夢の国！？ショコラティエの大冒険」的编号是348。<br>
