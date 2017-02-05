@@ -63,6 +63,7 @@ public class GUIMain extends JFrame
 		refresh.setFont(font);
 		exit.setFont(font);
 		table.setFont(font);
+		table.setEnabled(false);
 		table.getColumn("Rank").setMaxWidth(140);
 		table.getColumn("Producer").setMaxWidth(300);
 		table.getColumn("Point").setMaxWidth(200);
@@ -98,6 +99,7 @@ public class GUIMain extends JFrame
 		tbody = GetTbody();
 		model.setDataVector(tbody, thead);
 		table.setModel(model);
+		table.setEnabled(false);
 		tablePanel.validate();
 		tablePanel.repaint();
 	}
