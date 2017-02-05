@@ -20,7 +20,7 @@ public class GUIMain extends JFrame
 	private final String[] thead = { "Rank", "Producer", "Point" };
 	private Object[][] tbody = { { "", "", "" } };
 	private final Font font = new Font("微软雅黑", Font.PLAIN, 14);
-	private final URL config = GUIMain.class.getResource("/config.properties");
+	private final URL config = GUIMain.class.getResource("../../../config.properties");
 
 	protected DefaultTableModel model = new DefaultTableModel(tbody, thead);
 	protected JTable table = new JTable(model);
