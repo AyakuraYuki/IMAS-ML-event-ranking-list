@@ -21,9 +21,6 @@ public class PropertiesUtils
 	public static String X_Requested_With;
 	public static String EventCode;
 	public static String Color;
-	public static String R;
-	public static String G;
-	public static String B;
 
 	static
 	{
@@ -43,9 +40,6 @@ public class PropertiesUtils
 			X_Requested_With = PROPERTIES.getProperty("X-Requested-With");
 			EventCode = PROPERTIES.getProperty("EventCode");
 			Color = PROPERTIES.getProperty("Color");
-			R = PROPERTIES.getProperty("R");
-			G = PROPERTIES.getProperty("G");
-			B = PROPERTIES.getProperty("B");
 		}
 		catch (IOException e)
 		{
@@ -71,9 +65,6 @@ public class PropertiesUtils
 			X_Requested_With = PROPERTIES.getProperty("X-Requested-With");
 			EventCode = PROPERTIES.getProperty("EventCode");
 			Color = PROPERTIES.getProperty("Color");
-			R = PROPERTIES.getProperty("R");
-			G = PROPERTIES.getProperty("G");
-			B = PROPERTIES.getProperty("B");
 		}
 		catch (IOException e)
 		{

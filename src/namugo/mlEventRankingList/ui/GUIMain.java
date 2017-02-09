@@ -104,8 +104,7 @@ public class GUIMain extends JFrame
 		table.getColumn("Rank").setMaxWidth(140);
 		table.getColumn("Producer").setMaxWidth(300);
 		table.getColumn("Point").setMaxWidth(200);
-		table.setBackground(new Color(Integer.parseInt(PropertiesUtils.R),
-				Integer.parseInt(PropertiesUtils.G), Integer.parseInt(PropertiesUtils.B)));
+		table.setBackground(new Color(ColorUtils.R, ColorUtils.G, ColorUtils.B));
 		tablePanel.validate();
 		tablePanel.repaint();
 	}
