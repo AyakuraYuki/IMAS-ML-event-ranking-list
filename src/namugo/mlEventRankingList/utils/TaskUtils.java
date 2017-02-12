@@ -63,7 +63,7 @@ public class TaskUtils implements Callable<Object>
 					Ranking ranking = new Ranking();
 					ranking.setRank(info[0]);
 					ranking.setProducer(info[1]);
-					ranking.setPt(info[2]);
+					ranking.setPt(info[info.length - 1]);
 					list.add(ranking);
 				}
 			}
@@ -74,7 +74,7 @@ public class TaskUtils implements Callable<Object>
 				Ranking ranking = new Ranking();
 				ranking.setRank(info[0]);
 				ranking.setProducer(info[1]);
-				ranking.setPt(info[2]);
+				ranking.setPt(info[info.length - 1]);
 				list.add(ranking);
 			}
 			EntityUtils.consume(entity);

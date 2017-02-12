@@ -107,6 +107,7 @@ public class GUIMain extends JFrame
 		table.setBackground(new Color(ColorUtils.R, ColorUtils.G, ColorUtils.B));
 		tablePanel.validate();
 		tablePanel.repaint();
+		JOptionPane.showMessageDialog(null, "リフレッシュ完了");
 	}
 
 	private static Object[][] GetTbody()
