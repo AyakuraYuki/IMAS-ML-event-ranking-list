@@ -6,7 +6,6 @@ import javax.swing.table.DefaultTableModel;
 import namugo.mlEventRankingList.entity.Ranking;
 import namugo.mlEventRankingList.service.GetRanking;
 import namugo.mlEventRankingList.utils.ColorUtils;
-import namugo.mlEventRankingList.utils.ExceptionUtils;
 import namugo.mlEventRankingList.utils.PropertiesUtils;
 
 import java.awt.*;
@@ -54,7 +53,7 @@ public class GUIMain extends JFrame
 		}
 		catch (Exception e)
 		{
-			ExceptionUtils.Log(e);
+			// ignore
 		}
 	}
 
@@ -88,7 +87,7 @@ public class GUIMain extends JFrame
 		}
 		catch (IOException e)
 		{
-			ExceptionUtils.Log(e);
+			// ignore
 		}
 	}
 

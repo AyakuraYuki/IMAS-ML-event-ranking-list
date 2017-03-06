@@ -43,7 +43,6 @@ public class PropertiesUtils
 		}
 		catch (IOException e)
 		{
-			ExceptionUtils.Log(e);
 		}
 	}
 
@@ -68,7 +67,6 @@ public class PropertiesUtils
 		}
 		catch (IOException e)
 		{
-			ExceptionUtils.Log(e);
 		}
 	}
 	

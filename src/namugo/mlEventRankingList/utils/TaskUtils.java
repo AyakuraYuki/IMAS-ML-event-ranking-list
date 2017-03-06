@@ -82,7 +82,6 @@ public class TaskUtils implements Callable<Object>
 		}
 		catch (Exception e)
 		{
-			ExceptionUtils.Log(e);
 		}
 		return list;
 	}

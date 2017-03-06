@@ -27,11 +27,11 @@ public class UpdateLogoUtils
 		}
 		catch (MalformedURLException e)
 		{
-			ExceptionUtils.Log(e);
+			// ignore
 		}
 		catch (IOException e)
 		{
-			ExceptionUtils.Log(e);
+			// ignore
 		}
 	}
 }
