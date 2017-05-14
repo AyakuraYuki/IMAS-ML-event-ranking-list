@@ -38,6 +38,16 @@
       <property name="caretWidth" class="java.lang.Integer" />
     </properties>
   </component>
+  <component name="EclipseCodeFormatter">
+    <option name="defaultSettings" value="true" />
+    <option name="formatter" value="ECLIPSE" />
+    <option name="id" value="1490666089452" />
+    <option name="importOrderConfigFilePath" value="$APPLICATION_HOME_DIR$/Eclipse custom code style.xml" />
+    <option name="importOrderFromFile" value="true" />
+    <option name="name" value="default" />
+    <option name="pathToConfigFileJava" value="$APPLICATION_HOME_DIR$/Eclipse custom code style.xml" />
+    <option name="selectedJavaProfile" value="Custom" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
