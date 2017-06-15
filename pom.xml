@@ -9,6 +9,24 @@
 	<name>MLEventRankingList</name>
 	<url>https://github.com/AyakuraYuki/IMAS-ML-event-ranking-list</url>
 
+    <repositories>
+        <repository>
+            <id>alimaven</id>
+            <name>aliyun maven</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>jboss</id>
+            <name>jboss maven</name>
+            <url>http://repository.jboss.com/nexus/content/repositories/root_repository/maven2/</url>
+        </repository>
+        <repository>
+            <id>spring</id>
+            <name>Spring Framework Release</name>
+            <url>http://maven.springframework.org/release/</url>
+        </repository>
+    </repositories>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
