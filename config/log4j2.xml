@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Properties>
+        <Property name="log_path">/log</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT" ignoreExceptions="false">
+            <PatternLayout
+                    pattern="%highlight{%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %M %-5level %logger{36} - %msg%n}{FATAL=Bright Red, ERROR=Bright Magenta, WARN=Bright Yellow, INFO=Bright Green, DEBUG=Bright Cyan, TRACE=Bright White}"/>
+        </Console>
+        <RollingFile name="DailyRollingFile" fileName="${log_path}/webApp.log"
+                     filePattern="${log_path}/delivery-%d{yyyy-MM-dd}.log.zip">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %M %-5level %logger{36} - %msg%n"/>
+            <TimeBasedTriggeringPolicy interval="1"/>
+            <SizeBasedTriggeringPolicy size="50MB"/>
+            <DefaultRolloverStrategy max="50"/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="namugo.mlEventRankingList" level="error" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <Root level="error">
+            <AppenderRef ref="DailyRollingFile"/>
+        </Root>
+    </Loggers>
+</Configuration>
