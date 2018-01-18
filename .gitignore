@@ -1,8 +1,0 @@
-target
-.idea
-*.iml
-.project
-.classpath
-.settings
-Release
-log
